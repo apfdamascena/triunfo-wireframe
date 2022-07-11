@@ -8,5 +8,7 @@
 import UIKit
 
 class PopularCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
     
 }

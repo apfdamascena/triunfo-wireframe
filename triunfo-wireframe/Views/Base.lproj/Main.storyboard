@@ -67,7 +67,7 @@
                                                             <inset key="sectionInset" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="uZU-VH-aGk">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="uZU-VH-aGk" customClass="PopularCollectionViewCell" customModule="triunfo_wireframe" customModuleProvider="target">
                                                                 <rect key="frame" x="8" y="0.0" width="200" height="140"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="w0r-Sp-Ugw">
@@ -94,6 +94,10 @@
                                                                         <constraint firstItem="Njv-u7-Rt8" firstAttribute="leading" secondItem="w0r-Sp-Ugw" secondAttribute="leading" constant="8" id="mwL-5m-Cbe"/>
                                                                     </constraints>
                                                                 </collectionViewCellContentView>
+                                                                <connections>
+                                                                    <outlet property="image" destination="5SM-sF-U1A" id="w2A-Uq-efA"/>
+                                                                    <outlet property="titleLabel" destination="Njv-u7-Rt8" id="Xnd-cB-tIV"/>
+                                                                </connections>
                                                             </collectionViewCell>
                                                         </cells>
                                                     </collectionView>
@@ -143,7 +147,7 @@
                                                             <inset key="sectionInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jCG-0t-seP">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jCG-0t-seP" customClass="NowPlayingCollectionViewCell" customModule="triunfo_wireframe" customModuleProvider="target">
                                                                 <rect key="frame" x="16" y="0.0" width="251" height="114"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ZDR-SH-qOp">
@@ -189,6 +193,11 @@
                                                                         <constraint firstAttribute="bottom" secondItem="IuP-eQ-Tdc" secondAttribute="bottom" constant="12" id="z8i-yY-WMu"/>
                                                                     </constraints>
                                                                 </collectionViewCellContentView>
+                                                                <connections>
+                                                                    <outlet property="dateLabel" destination="hRu-m8-pti" id="cjh-JL-Tgi"/>
+                                                                    <outlet property="image" destination="IuP-eQ-Tdc" id="f7A-em-WAg"/>
+                                                                    <outlet property="titleLabel" destination="MUn-fc-eJW" id="q01-IR-Lw4"/>
+                                                                </connections>
                                                             </collectionViewCell>
                                                         </cells>
                                                     </collectionView>
@@ -310,6 +319,7 @@
                     <navigationItem key="navigationItem" title="Featured" id="eSn-Hx-Q89"/>
                     <size key="freeformSize" width="414" height="1341"/>
                     <connections>
+                        <outlet property="nowPlayingCollectionView" destination="CtM-6m-Pcz" id="ekj-zY-EKq"/>
                         <outlet property="popularCollectionView" destination="5bJ-dR-Fyh" id="jiv-sB-xep"/>
                     </connections>
                 </viewController>

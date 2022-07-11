@@ -64,8 +64,7 @@
 				0DDE64F5287C98F50010A440 /* Controllers */,
 				0D106DF52874B02E00F70558 /* AppDelegate.swift */,
 				0D106DF72874B02E00F70558 /* SceneDelegate.swift */,
-				0D106DFE2874B02F00F70558 /* Assets.xcassets */,
-				0D106E032874B02F00F70558 /* Info.plist */,
+				0DDE64F7287C9E3F0010A440 /* SupportingFiles */,
 			);
 			path = "triunfo-wireframe";
 			sourceTree = "<group>";
@@ -87,6 +86,15 @@
 				0DDE64F1287C98050010A440 /* PopularCollectionViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		0DDE64F7287C9E3F0010A440 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0D106DFE2874B02F00F70558 /* Assets.xcassets */,
+				0D106E032874B02F00F70558 /* Info.plist */,
+			);
+			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
