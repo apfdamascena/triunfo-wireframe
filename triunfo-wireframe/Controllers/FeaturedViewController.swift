@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FeaturedViewController.swift
 //  triunfo-wireframe
 //
 //  Created by alexdamascena on 05/07/22.
@@ -7,11 +7,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FeaturedViewController: UIViewController {
 
+    @IBOutlet weak var popularCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
 
