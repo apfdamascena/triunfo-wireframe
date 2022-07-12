@@ -8,8 +8,17 @@
 import UIKit
 
 class NowPlayingCollectionViewCell: UICollectionViewCell {
+    
+    static let identifier = "now-playing-cell"
+    
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
+    
+    func draw(_ element: Movie){
+        image.image = UIImage(named: element.poster)
+        titleLabel.text = element.title
+        dateLabel.text = element.releaseDate
+    }
     
 }
