@@ -12,6 +12,10 @@ class FeaturedViewController: UIViewController {
     @IBOutlet weak var popularCollectionView: UICollectionView!
     @IBOutlet weak var nowPlayingCollectionView: UICollectionView!
     
+    let movies: [Movie] = [
+        Movie(title: "Harry Potter ", poster: "poster_harrypotter.jpg", backdrop: "backdrop_harrypotter.jpg", voteAverage: 4.6, releaseDate: "2001", overview: "Um bruxinho vai para escola de magia e vive altas aventuras", genres: ["Fantasia", "Mistério e aventura"])
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         popularCollectionView.register(PopularCollectionViewCell.self, forCellWithReuseIdentifier: PopularCollectionViewCell.identifier)

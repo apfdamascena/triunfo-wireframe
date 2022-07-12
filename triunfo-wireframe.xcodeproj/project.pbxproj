@@ -16,6 +16,11 @@
 		0DDE64F2287C98050010A440 /* PopularCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE64F1287C98050010A440 /* PopularCollectionViewCell.swift */; };
 		0DDE64F4287C98440010A440 /* NowPlayingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE64F3287C98440010A440 /* NowPlayingCollectionViewCell.swift */; };
 		0DDE6502287DEE450010A440 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE6501287DEE450010A440 /* Movie.swift */; };
+		0DDE6508287DF5190010A440 /* Movie+NowPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE6503287DF5190010A440 /* Movie+NowPlaying.swift */; };
+		0DDE6509287DF5190010A440 /* Movie+Popular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE6504287DF5190010A440 /* Movie+Popular.swift */; };
+		0DDE650A287DF5190010A440 /* Movie+Upcoming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE6505287DF5190010A440 /* Movie+Upcoming.swift */; };
+		0DDE650B287DF5190010A440 /* Movie+TrendingToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE6506287DF5190010A440 /* Movie+TrendingToday.swift */; };
+		0DDE650C287DF5190010A440 /* Movie+TrendingThisWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE6507287DF5190010A440 /* Movie+TrendingThisWeek.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		0DDE64F1287C98050010A440 /* PopularCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularCollectionViewCell.swift; sourceTree = "<group>"; };
 		0DDE64F3287C98440010A440 /* NowPlayingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingCollectionViewCell.swift; sourceTree = "<group>"; };
 		0DDE6501287DEE450010A440 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		0DDE6503287DF5190010A440 /* Movie+NowPlaying.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+NowPlaying.swift"; sourceTree = "<group>"; };
+		0DDE6504287DF5190010A440 /* Movie+Popular.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+Popular.swift"; sourceTree = "<group>"; };
+		0DDE6505287DF5190010A440 /* Movie+Upcoming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+Upcoming.swift"; sourceTree = "<group>"; };
+		0DDE6506287DF5190010A440 /* Movie+TrendingToday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+TrendingToday.swift"; sourceTree = "<group>"; };
+		0DDE6507287DF5190010A440 /* Movie+TrendingThisWeek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+TrendingThisWeek.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +113,11 @@
 		0DDE6500287DEE040010A440 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0DDE6503287DF5190010A440 /* Movie+NowPlaying.swift */,
+				0DDE6504287DF5190010A440 /* Movie+Popular.swift */,
+				0DDE6507287DF5190010A440 /* Movie+TrendingThisWeek.swift */,
+				0DDE6506287DF5190010A440 /* Movie+TrendingToday.swift */,
+				0DDE6505287DF5190010A440 /* Movie+Upcoming.swift */,
 				0DDE6501287DEE450010A440 /* Movie.swift */,
 			);
 			path = Models;
@@ -180,10 +195,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DDE64F4287C98440010A440 /* NowPlayingCollectionViewCell.swift in Sources */,
+				0DDE650C287DF5190010A440 /* Movie+TrendingThisWeek.swift in Sources */,
+				0DDE650B287DF5190010A440 /* Movie+TrendingToday.swift in Sources */,
 				0DDE64F2287C98050010A440 /* PopularCollectionViewCell.swift in Sources */,
 				0DDE6502287DEE450010A440 /* Movie.swift in Sources */,
 				0D106DFA2874B02E00F70558 /* FeaturedViewController.swift in Sources */,
+				0DDE6509287DF5190010A440 /* Movie+Popular.swift in Sources */,
 				0D106DF62874B02E00F70558 /* AppDelegate.swift in Sources */,
+				0DDE6508287DF5190010A440 /* Movie+NowPlaying.swift in Sources */,
+				0DDE650A287DF5190010A440 /* Movie+Upcoming.swift in Sources */,
 				0D106DF82874B02E00F70558 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
