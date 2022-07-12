@@ -21,6 +21,7 @@
 		0DDE650A287DF5190010A440 /* Movie+Upcoming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE6505287DF5190010A440 /* Movie+Upcoming.swift */; };
 		0DDE650B287DF5190010A440 /* Movie+TrendingToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE6506287DF5190010A440 /* Movie+TrendingToday.swift */; };
 		0DDE650C287DF5190010A440 /* Movie+TrendingThisWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE6507287DF5190010A440 /* Movie+TrendingThisWeek.swift */; };
+		0DDE650E287E14860010A440 /* FeaturedViewController+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE650D287E14860010A440 /* FeaturedViewController+UICollectionViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		0DDE6505287DF5190010A440 /* Movie+Upcoming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+Upcoming.swift"; sourceTree = "<group>"; };
 		0DDE6506287DF5190010A440 /* Movie+TrendingToday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+TrendingToday.swift"; sourceTree = "<group>"; };
 		0DDE6507287DF5190010A440 /* Movie+TrendingThisWeek.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Movie+TrendingThisWeek.swift"; sourceTree = "<group>"; };
+		0DDE650D287E14860010A440 /* FeaturedViewController+UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeaturedViewController+UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				0D106DF92874B02E00F70558 /* FeaturedViewController.swift */,
+				0DDE650D287E14860010A440 /* FeaturedViewController+UICollectionViewDataSource.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				0DDE650C287DF5190010A440 /* Movie+TrendingThisWeek.swift in Sources */,
 				0DDE650B287DF5190010A440 /* Movie+TrendingToday.swift in Sources */,
 				0DDE64F2287C98050010A440 /* PopularCollectionViewCell.swift in Sources */,
+				0DDE650E287E14860010A440 /* FeaturedViewController+UICollectionViewDataSource.swift in Sources */,
 				0DDE6502287DEE450010A440 /* Movie.swift in Sources */,
 				0D106DFA2874B02E00F70558 /* FeaturedViewController.swift in Sources */,
 				0DDE6509287DF5190010A440 /* Movie+Popular.swift in Sources */,
