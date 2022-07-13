@@ -23,7 +23,14 @@ class FeaturedViewController: UIViewController {
         views.forEach{ view in
             view.dataSource = self
             view.showsHorizontalScrollIndicator = false
+            view.delegate = self
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let detailsViewController = segue.destination as? DetailsViewController else { return }
+        guard let movie = sender as? Movie else { return }
+        detailsViewController.movie = movie
     }
 }
 

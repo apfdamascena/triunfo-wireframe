@@ -326,11 +326,29 @@
                     <connections>
                         <outlet property="nowPlayingCollectionView" destination="CtM-6m-Pcz" id="ekj-zY-EKq"/>
                         <outlet property="popularCollectionView" destination="5bJ-dR-Fyh" id="jiv-sB-xep"/>
+                        <segue destination="AKa-MK-CPg" kind="show" identifier="detailsSegue" id="O3w-km-dGx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1344.9275362318842" y="163.05803571428569"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="lom-6N-Wls">
+            <objects>
+                <viewController id="AKa-MK-CPg" customClass="DetailsViewController" customModule="triunfo_wireframe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XbB-0D-KUC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1341"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8V4-lD-Dn9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="x06-Zi-rsH"/>
+                    <size key="freeformSize" width="414" height="1341"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4jC-yZ-cta" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2133" y="163"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="uDM-fc-KVh">

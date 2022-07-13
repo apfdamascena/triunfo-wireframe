@@ -18,7 +18,6 @@ class NowPlayingCollectionViewCell: UICollectionViewCell {
     func draw(_ element: Movie){
         image.image = UIImage(named: element.poster)
         titleLabel.text = element.title
-        dateLabel.text = element.releaseDate
+        dateLabel.text = String(element.releaseDate.prefix(4))
     }
-    
 }
