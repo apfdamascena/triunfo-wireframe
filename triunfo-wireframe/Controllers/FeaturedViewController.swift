@@ -12,7 +12,7 @@ class FeaturedViewController: UIViewController {
     @IBOutlet weak var popularCollectionView: UICollectionView!
     @IBOutlet weak var nowPlayingCollectionView: UICollectionView!
     
-    let popularMovies = Movie.popularMovies()
+    var popularMovies: [Movie] = []
     let nowPlayingMovies = Movie.nowPlayingMovies()
         
     override func viewDidLoad() {
@@ -24,6 +24,11 @@ class FeaturedViewController: UIViewController {
             view.dataSource = self
             view.showsHorizontalScrollIndicator = false
             view.delegate = self
+        }
+        
+        Task {
+            popularMovies = await Movie.popularMoviesAPI()
+            self.popularCollectionView.reloadData()
         }
     }
     

@@ -16,7 +16,7 @@ class NowPlayingCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     
     func draw(_ element: Movie){
-        image.image = UIImage(named: element.poster)
+        image.image = UIImage(named: element.posterPath)
         titleLabel.text = element.title
         dateLabel.text = String(element.releaseDate.prefix(4))
     }

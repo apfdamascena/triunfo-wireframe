@@ -20,10 +20,24 @@ class DetailsViewController: UIViewController {
         super.viewDidLoad()
         guard let movie = movie else { return }
         self.title = movie.title
-        backdropImage.image = UIImage(named: movie.backdrop)
+        backdropImage.image = UIImage()
         titleLabel.text = movie.title
         ratingLabel.text = "Rating: \(movie.voteAverage)/10"
-        posterImage.image = UIImage(named: movie.poster)
+        posterImage.image = UIImage()
         overviewLabel.text = movie.overview
+//
+//        let imageData = await Movie.downloadImageData(withPath: element.backdropPath)
+//        let image = UIImage(data: imageData)
+//        self.image.image = image
+        
+        Task {
+            let backdropImage = await Movie.downloadImageData(withPath: movie.backdropPath)
+            let imageBackdrop = UIImage(data: backdropImage)
+            self.backdropImage.image = imageBackdrop
+            
+            let postImage = await Movie.downloadImageData(withPath: movie.posterPath)
+            let imagePost = UIImage(data: postImage)
+            self.posterImage.image = imagePost
+        }
     }
 }

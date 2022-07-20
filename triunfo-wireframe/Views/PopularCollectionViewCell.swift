@@ -17,7 +17,14 @@ class PopularCollectionViewCell: UICollectionViewCell {
     
     func  draw(_ element: Movie){
         titleLabel.text = element.title
-        image.image = UIImage(named: element.backdrop)
+        image.image = UIImage()
+        
+        Task {
+            let imageData = await Movie.downloadImageData(withPath: element.backdropPath)
+            let image = UIImage(data: imageData)
+            self.image.image = image
+        }
+
     }
 
 }
